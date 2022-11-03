@@ -88,8 +88,7 @@ def codeql_analysis(cur, db):
     start_fd(0, cur)
 
 
-def start_fd
-(tokenpath, cur):
+def start_fd(tokenpath, cur):
     print("At start func")
     command = ["python3", cur + "/array-literals.py", cur + "/arrlits/.", cur + "/arrlits.out"]
     worker1 = subprocess.Popen(command)
